@@ -1,0 +1,229 @@
+// 초기화 css
+@import './reset.scss';
+
+.section-inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.section-title {
+  font-family: 'NanumSquare';
+  font-weight: bold;
+  font-size: 45px;
+  span {
+    color: #3bc5b0;
+  }
+}
+.point-color {
+  color: #3bc5b0;
+}
+.profile-content {
+  width: 1100px;
+  margin: 100px auto 50px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+  .info-section {
+    text-align: right;
+    .user-info {
+      padding-bottom: 40px;
+    }
+    .user-image {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        display: block;
+        width: 260px;
+      }
+    }
+    .user-name {
+      margin-top: 25px;
+      font-family: 'NanumSquare';
+      font-weight: bold;
+      font-size: 35px;
+      letter-spacing: 2px;
+    }
+    .user-position {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #999;
+    }
+    .info-wrapper {
+      margin-top: 20px;
+    }
+    .info-list {
+      margin-top: 15px;
+      .url {
+        + .url {
+          margin-top: 8px;
+        }
+        letter-spacing: -0.02em;
+        .link {
+          cursor: pointer;
+          border-bottom: 1px solid #666;
+        }
+      }
+    }
+  }
+}
+.profile-section {
+  padding-top: 70px;
+}
+.profile-text {
+  margin-top: 50px;
+  padding-left: 40px;
+  font-family: 'NanumSquare';
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.portfolio-content {
+  background-color: #fff;
+  .keyvisual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background-color: #222;
+    .text-area {
+      padding: 0 20px;
+      text-align: center;
+    }
+    .subject {
+      font-family: 'NanumSquare';
+      font-weight: bold;
+      font-size: 65px;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+    .sub-text {
+      margin-top: 10px;
+      font-weight: lighter;
+      font-size: 20px;
+      color: #fff;
+    }
+    .stack {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #fff;
+    }
+    .btn-view {
+      transition: 0.3s;
+      display: block;
+      width: 130px;
+      height: 40px;
+      line-height: 38px;
+      margin: 30px auto 0;
+      border: 1px solid #fff;
+      font-family: 'NanumSquare';
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #222;
+      }
+    }
+  }
+}
+.portfolio-section {
+  padding: 60px 0;
+  border-top: 1px dashed #d1d1d1;
+  .stack {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #888;
+  }
+}
+.list-container {
+  padding-left: 60px;
+  .item {
+    overflow: hidden;
+    padding: 40px 0;
+    + .item {
+      border-top: 1px dashed #d1d1d1;
+    }
+  }
+  .date {
+    float: left;
+    width: 270px;
+  }
+  .period {
+    font-family: 'NanumSquare';
+    font-weight: 500;
+    font-size: 20px;
+    color: #999;
+  }
+  .article {
+    overflow: hidden;
+    .title {
+      font-family: 'NanumSquare';
+      font-size: 25px;
+    }
+    .sub-text {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #999;
+    }
+    .info-text {
+      margin-top: 20px;
+      li {
+        position: relative;
+        padding-left: 12px;
+        font-size: 16px;
+        &:before {
+          display: inline-block;
+          content: '';
+          width: 5px;
+          height: 1px;
+          position: absolute;
+          top: 9px;
+          left: 0;
+          background-color: #999;
+        }
+        + li {
+          margin-top: 5px;
+        }
+        &.skils {
+          display: inline-block;
+          padding: 5px 10px;
+          font-weight: bold;
+          background-color: #f1f1f1;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.old-list-container {
+  border-top: 1px dashed #d1d1d1;
+}
+.old-list {
+  overflow: hidden;
+  li {
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 12px;
+      margin-top: -6px;
+      background-color: #ddd;
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
