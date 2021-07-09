@@ -1,7 +1,12 @@
 import React from 'react';
+import Routes from './Routes/Routes';
 
 const App = () => {
-  return <div>포트폴리오 사이트</div>;
+  return (
+    <div>
+      <Routes />
+    </div>
+  );
 };
 
 export default App;
