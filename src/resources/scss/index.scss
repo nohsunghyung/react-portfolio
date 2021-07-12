@@ -1,6 +1,44 @@
 // 초기화 css
 @import './reset.scss';
 
+.header {
+  width: 100%;
+  position: relative;
+  .header-inner {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    z-index: 10;
+  }
+  .gnb {
+    text-align: right;
+    overflow: hidden;
+  }
+  .gnb-menu {
+    float: left;
+    + .gnb-menu {
+      margin-left: 20px;
+    }
+    a {
+      display: block;
+      transition: color 0.3s;
+      font-family: 'NanumSquare';
+      font-weight: bold;
+      font-size: 25px;
+      color: #fff;
+      text-shadow: 1px 1px 1px #222;
+      &.active {
+        color: #f4e533;
+      }
+    }
+  }
+  &.active {
+    a {
+      color: #000;
+    }
+  }
+}
+
 .section-inner {
   width: 1200px;
   margin: 0 auto;
@@ -12,6 +50,11 @@
   font-size: 45px;
   span {
     color: #3bc5b0;
+  }
+  .etc {
+    font-size: 20px;
+    font-weight: 300;
+    color: #222;
   }
 }
 .point-color {
@@ -162,9 +205,27 @@
       font-size: 25px;
     }
     .sub-text {
-      margin-top: 8px;
+      margin-top: 12px;
       font-size: 16px;
       color: #999;
+      .asset {
+        + .asset {
+          position: relative;
+          padding-left: 10px;
+          margin-left: 10px;
+          &:before {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 14px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #aaa;
+          }
+        }
+      }
     }
     .info-text {
       margin-top: 20px;
@@ -183,7 +244,7 @@
           background-color: #999;
         }
         + li {
-          margin-top: 5px;
+          margin-top: 8px;
         }
         &.skils {
           display: inline-block;

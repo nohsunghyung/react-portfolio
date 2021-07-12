@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import data from '../config/data';
 
 const Profile = () => {
@@ -75,7 +74,8 @@ const Profile = () => {
         </section>
         <section className="profile-section">
           <h3 className="section-title">
-            <span>W</span>ork project
+            <span>W</span>ork project{' '}
+            <span className="etc">(회사 프로젝트)</span>
           </h3>
           <ul className="list-container">
             {project.frontEnd.map((item) => (
@@ -98,6 +98,21 @@ const Profile = () => {
                 </div>
               </li>
             ))}
+            <li className="item">
+              <div className="article">
+                <h4 className="title">
+                  <div>퍼블리싱 작업프로젝트</div>
+                </h4>
+                <div className="sub-text">
+                  {project.publish.map((item) => (
+                    <span className="asset">{item.subject}</span>
+                  ))}
+                  {project.etc.map((item) => (
+                    <span className="asset">{item}</span>
+                  ))}
+                </div>
+              </div>
+            </li>
           </ul>
         </section>
         <section className="profile-section"></section>

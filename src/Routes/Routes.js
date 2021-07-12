@@ -8,7 +8,7 @@ const Routes = () => {
     <div>
       <Route
         exact
-        path={['/', 'profile']}
+        path={['/', '/profile']}
         render={(props) => <Profile {...props} />}
       />
       <Route
