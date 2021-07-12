@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import data from '../config/data';
 
 const Profile = () => {
-  const { profile } = data;
+  const { profile, career, project } = data;
   const { name, position, birth, links, introduce } = profile;
   return (
     <div className="profile-content">
@@ -51,28 +51,55 @@ const Profile = () => {
             <span>C</span>areer
           </h3>
           <ul className="list-container">
-            <li className="item">
-              <div className="date">
-                <div className="period">{'asdfasdf'}</div>
-              </div>
-              <div className="article">
-                <h4 className="title">
-                  <div>회사</div>
-                </h4>
-                <div className="sub-text">
-                  <div>포지션</div>
-                  <div>요약</div>
-                  <div>타입</div>
+            {career.map((item) => (
+              <li className="item" key={item.company}>
+                <div className="date">
+                  <div className="period">{item.date}</div>
                 </div>
-                <ul className="info-text">
-                  <li>works</li>
-                  <li>스킬</li>
-                </ul>
-              </div>
-            </li>
+                <div className="article">
+                  <h4 className="title">
+                    <div>{item.company}</div>
+                  </h4>
+                  <div className="sub-text">
+                    <div>{item.position}</div>
+                  </div>
+                  <ul className="info-text">
+                    {item.works.map((work, index) => (
+                      <li key={index}>{work}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
           </ul>
         </section>
-        <section className="profile-section"></section>
+        <section className="profile-section">
+          <h3 className="section-title">
+            <span>W</span>ork project
+          </h3>
+          <ul className="list-container">
+            {project.frontEnd.map((item) => (
+              <li className="item" key={item.subject}>
+                {/* <div className="date">
+                  <div className="period">{'-'}</div>
+                </div> */}
+                <div className="article">
+                  <h4 className="title">
+                    <div>{item.subject}</div>
+                  </h4>
+                  <div className="sub-text">
+                    <div>{item.summary}</div>
+                  </div>
+                  <ul className="info-text">
+                    {item.works.map((work, index) => (
+                      <li key={index}>{work}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
         <section className="profile-section"></section>
         {/* <profile-list
 				:profileData="profileData.project.oldProject"
