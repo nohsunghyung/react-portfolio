@@ -16,7 +16,7 @@ const portfolioData = {
       }
     ],
     introduce: `안녕하세요. 프론트엔드 개발자 성형 안한 노성형입니다. <br/>
-    남을 웃기기 위해 태어난 것 같은 <strong class="point-color">긍정적인 에너지</strong>로 항상 주변을 즐겁게하며<br/>
+    남을 웃기기 위해 태어난 것 같은 <strong class="point-color">긍정적인 에너지</strong>로 항상 주변을 즐겁게 하며<br/>
     업무에 관해서 항상 적극적이고 능동적이며 스스로에 대해 질문하며 고민하는 개발자로 나아가는 중입니다 :)`
   },
   career: [
@@ -60,7 +60,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasapp,
-        description: `하이브리드 앱으로 제작되었으며, 서울/인천 지역으로만 시행되고 있던<br/> 서비스를 제주/중부 까지 서비스 확장 작업을 하였습니다.</br> 또한 네이티브 개발자들과 인터페이스 협업을 하며 많은것을 배웠으며</br> 신규 서비스 및 유지보수에 집중한 프로젝트입니다.`
+        description: `하이브리드 앱으로 제작되었으며, 서울/인천 지역으로만 시행되고 있던<br/> 서비스를 제주/중부 까지 서비스 확장 작업 하였습니다.</br> 지속적인 신규 서비스 오픈 및 유지보수에 집중한 프로젝트입니다.`
       },
       {
         subject: '가스앱 관리자',

@@ -7,10 +7,10 @@ const AppHeader = () => {
       <div className="header-inner">
         <ul className="gnb">
           <li className="gnb-menu">
-            <NavLink to="profile">About</NavLink>
+            <NavLink to="/profile">About</NavLink>
           </li>
           <li className="gnb-menu">
-            <NavLink to="portfolio">Portfolio</NavLink>
+            <NavLink to="/portfolio">Portfolio</NavLink>
           </li>
         </ul>
       </div>

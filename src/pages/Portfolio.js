@@ -32,7 +32,7 @@ const Portfolio = () => {
                   <div className="summary">
                     <span>· {item.summary}</span>
                   </div>
-                  {/* <div className="description" dangerouslySetInnerHTML={{ __html: item.description }}></div> */}
+                  <div className="description" dangerouslySetInnerHTML={{ __html: item.description }}></div>
                   {item.url ? <div className="url"></div> : null}
                   <dl className="skils">
                     <dt>
