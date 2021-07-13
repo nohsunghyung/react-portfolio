@@ -179,7 +179,9 @@
 }
 .portfolio-section {
   padding: 100px 0;
-  border-top: 1px dashed #d1d1d1;
+  + .portfolio-section {
+    border-top: 1px dashed #d1d1d1;
+  }
   .stack {
     margin-top: 15px;
     font-size: 16px;
