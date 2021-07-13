@@ -1,3 +1,5 @@
+import gasapp from '../resources/images/gasapp.gif';
+
 const portfolioData = {
   profile: {
     name: '노성형',
@@ -13,9 +15,9 @@ const portfolioData = {
         url: 'https://github.com/nohsunghyung'
       }
     ],
-    introduce: `남을 웃기기 위해 태어났을 것 같은 <strong class="point-color">긍정적인 에너지</strong>와 
-      <strong class="point-color">웃음</strong> 주는것을 좋아하며 <br/> 
-      업무에 관해서 적극적이고 능동적이며 항상 고민하는 개발자로 나아가기 위해 노력하고 있습니다 :)`
+    introduce: `안녕하세요. 프론트엔드 개발자 성형 안한 노성형입니다. <br/>
+    남을 웃기기 위해 태어난 것 같은 <strong class="point-color">긍정적인 에너지</strong>로 항상 주변을 즐겁게하며<br/>
+    업무에 관해서 항상 적극적이고 능동적이며 스스로에 대해 질문하며 고민하는 개발자로 나아가는 중입니다 :)`
   },
   career: [
     {
@@ -56,8 +58,9 @@ const portfolioData = {
           '기여도 - 40%',
           'skils : React / Mobx / javascript / html / sass'
         ],
-        images: '',
-        description: '디스'
+        skils: 'React / Mobx / javascript / html / sass',
+        images: gasapp,
+        description: `하이브리드 앱으로 제작되었으며, 서울/인천 지역으로만 시행되고 있던<br/> 서비스를 제주/중부 까지 서비스 확장 작업을 하였습니다.</br> 또한 네이티브 개발자들과 인터페이스 협업을 하며 많은것을 배웠으며</br> 신규 서비스 및 유지보수에 집중한 프로젝트입니다.`
       },
       {
         subject: '가스앱 관리자',
@@ -70,7 +73,9 @@ const portfolioData = {
           '기여도 - 80%',
           'skils : React / Mobx / javascript / html / sass'
         ],
-        images: ''
+        skils: 'React / Mobx / javascript / html / sass',
+        images: gasapp,
+        description: '디스'
       },
       {
         subject: '가스앱 채팅상담서비스',
@@ -83,7 +88,9 @@ const portfolioData = {
           '기여도 - 70%',
           'skils : React / Mobx / javascript / html / sass'
         ],
-        images: ''
+        skils: 'React / Mobx / javascript / html / sass',
+        images: gasapp,
+        description: '디스'
       }
     ],
     publish: [
@@ -107,9 +114,16 @@ const portfolioData = {
         // images: require('@/assets/images/ak.jpg'),
         works: ['프로젝트 공통레이아웃작업', 'javascript/jquery 스크립트 개발', '메인/서브 퍼블리싱'],
         skils: 'html / sass / javascript / jquery'
+      },
+      {
+        subject: 'K CAR(SK엔카)',
+        url: 'https://www.kcar.com/index.do',
+        // images: require('@/assets/images/ak.jpg'),
+        works: ['프로젝트 공통레이아웃작업', 'javascript/jquery 스크립트 개발', '메인/서브 퍼블리싱'],
+        skils: 'html / sass / javascript / jquery'
       }
     ],
-    etc: ['Demers', 'HANSKIN', 'K CAR(SK엔카)', 'GS리테일', '전국 동시 지방선거']
+    etc: ['Demers', 'HANSKIN', 'GS리테일', '전국 동시 지방선거']
   }
 };
 

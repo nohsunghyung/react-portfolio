@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../config/data';
+import noh from '../resources/images/noh.png';
 
 const Profile = () => {
   const { profile, career, project } = data;
@@ -10,7 +11,7 @@ const Profile = () => {
         <div className="profile-inner">
           <section className="info-section">
             <div className="user-image">
-              <img src="" alt="프로필사진" />
+              <img src={noh} alt="프로필사진" />
             </div>
             <div className="user-info">
               <h1 className="user-name">{name}</h1>

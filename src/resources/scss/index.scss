@@ -83,7 +83,7 @@
       justify-content: flex-end;
       img {
         display: block;
-        width: 260px;
+        width: 200px;
       }
     }
     .user-name {
@@ -91,7 +91,7 @@
       font-family: 'NanumSquare';
       font-weight: bold;
       font-size: 35px;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
     .user-position {
       margin-top: 5px;
@@ -178,12 +178,139 @@
   }
 }
 .portfolio-section {
-  padding: 60px 0;
+  padding: 100px 0;
   border-top: 1px dashed #d1d1d1;
   .stack {
     margin-top: 15px;
     font-size: 16px;
     color: #888;
+  }
+}
+.portfolio-list {
+  margin-top: 70px;
+  .item {
+    display: flex;
+    align-items: center;
+    + .item {
+      margin-top: 100px;
+    }
+  }
+  .image {
+    border: 1px solid #d1d1d1;
+    img {
+      display: block;
+      width: 540px;
+    }
+  }
+  .text-box {
+    margin-left: 60px;
+  }
+  .project-title {
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .summary {
+    margin-top: 15px;
+    span {
+      font-size: 15px;
+      color: #999;
+    }
+  }
+  .description {
+    margin-top: 15px;
+    background: #666;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .url {
+    margin-top: 15px;
+    a {
+      display: inline-block;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+  .skils {
+    margin-top: 15px;
+    dt,
+    dd {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    dt {
+      strong {
+        display: inline-block;
+        padding: 5px 7px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        background-color: #222;
+      }
+    }
+    dd {
+      padding-left: 12px;
+      font-size: 15px;
+      color: #888;
+      span {
+        position: relative;
+        + span {
+          padding-left: 10px;
+        }
+        &:first-child {
+          padding: 0;
+          &:after {
+            display: none;
+          }
+        }
+        &:after {
+          display: block;
+          content: '';
+          width: 1px;
+          height: 12px;
+          position: absolute;
+          top: 50%;
+          left: 3px;
+          margin-top: -6px;
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
+.old-project-list {
+  margin-top: 40px;
+  overflow: hidden;
+  li {
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 12px;
+      margin-top: -6px;
+      background-color: #ddd;
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+    .link {
+      cursor: pointer;
+      border-bottom: 1px solid #666;
+    }
   }
 }
 .list-container {
@@ -209,7 +336,7 @@
     overflow: hidden;
     .title {
       font-family: 'NanumSquare';
-      font-size: 25px;
+      font-size: 28px;
       span {
         font-family: 'NanumSquare';
         font-weight: 300;
@@ -241,7 +368,7 @@
       }
     }
     .info-text {
-      margin-top: 20px;
+      margin-top: 25px;
       li {
         position: relative;
         padding-left: 12px;
