@@ -198,7 +198,13 @@
     }
   }
   .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 540px;
+    height: 250px;
     border: 1px solid #d1d1d1;
+    text-align: center;
     img {
       display: block;
       width: 540px;

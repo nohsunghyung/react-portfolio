@@ -75,7 +75,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasapp,
-        description: '디스'
+        description: ''
       },
       {
         subject: '가스앱 채팅상담서비스',
@@ -90,7 +90,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasapp,
-        description: '디스'
+        description: ''
       }
     ],
     publish: [

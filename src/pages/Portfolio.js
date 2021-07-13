@@ -24,9 +24,7 @@ const Portfolio = () => {
           <ul className="portfolio-list">
             {project.frontEnd.map((item) => (
               <li className="item" key={item.subject}>
-                <div className="image">
-                  <img src={item.images} alt="" />
-                </div>
+                <div className="image">이미지 준비중{/* <img src={item.images} alt="" /> */}</div>
                 <div className="text-box">
                   <h4 className="project-title">{item.subject}</h4>
                   <div className="summary">
