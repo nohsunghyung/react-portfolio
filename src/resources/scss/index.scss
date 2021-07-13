@@ -2,12 +2,13 @@
 @import './reset.scss';
 
 .header {
-  width: 100%;
+  max-width: 1100px;
   position: relative;
+  margin: 0 auto;
   .header-inner {
     position: absolute;
     top: 30px;
-    right: 120px;
+    right: 0;
     z-index: 10;
   }
   .gnb {
@@ -71,6 +72,7 @@
   padding: 40px;
   background-color: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
   .info-section {
     text-align: right;
     .user-info {
@@ -122,7 +124,7 @@
   margin-top: 50px;
   padding-left: 40px;
   font-family: 'NanumSquare';
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 

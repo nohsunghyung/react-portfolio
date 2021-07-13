@@ -56,7 +56,8 @@ const portfolioData = {
           '기여도 - 40%',
           'skils : React / Mobx / javascript / html / sass'
         ],
-        images: ''
+        images: '',
+        description: '디스'
       },
       {
         subject: '가스앱 관리자',

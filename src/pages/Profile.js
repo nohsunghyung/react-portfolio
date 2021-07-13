@@ -3,7 +3,7 @@ import data from '../config/data';
 
 const Profile = () => {
   const { profile, career, project } = data;
-  const { name, position, birth, links, introduce } = profile;
+  const { name, position, links, introduce } = profile;
   return (
     <div className="profile-container">
       <div className="profile-content">
