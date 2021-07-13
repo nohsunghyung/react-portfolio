@@ -45,6 +45,7 @@
   position: relative;
 }
 .section-title {
+  margin-bottom: 18px;
   font-family: 'NanumSquare';
   font-weight: bold;
   font-size: 45px;
@@ -52,13 +53,17 @@
     color: #3bc5b0;
   }
   .etc {
+    font-family: 'NanumSquare';
     font-size: 20px;
     font-weight: 300;
-    color: #222;
+    color: #999;
   }
 }
 .point-color {
   color: #3bc5b0;
+}
+.profile-container {
+  border-top: 1px solid transparent;
 }
 .profile-content {
   width: 1100px;
@@ -111,7 +116,7 @@
   }
 }
 .profile-section {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 .profile-text {
   margin-top: 50px;
@@ -203,6 +208,12 @@
     .title {
       font-family: 'NanumSquare';
       font-size: 25px;
+      span {
+        font-family: 'NanumSquare';
+        font-weight: 300;
+        font-size: 18px;
+        color: #999;
+      }
     }
     .sub-text {
       margin-top: 12px;

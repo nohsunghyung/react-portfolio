@@ -5,10 +5,10 @@ import './resources/scss/index.scss';
 
 const App = () => {
   return (
-    <div>
+    <>
       <AppHeader />
       <Routes />
-    </div>
+    </>
   );
 };
 
