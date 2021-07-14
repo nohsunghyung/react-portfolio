@@ -51,7 +51,7 @@ const Portfolio = () => {
         </section>
         {/* <section className="portfolio-section company">
           <h3 className="section-title">
-            <span>P</span>ersonal project
+            <span>P</span>ersonal project <span className="etc">(개인 프로젝트)</span>
           </h3>
         </section> */}
         <section className="portfolio-section">
