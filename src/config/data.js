@@ -1,4 +1,5 @@
 import gasapp from '../resources/images/gasapp.gif';
+import gasappAdmin from '../resources/images/gasappAdmin.gif';
 
 const portfolioData = {
   profile: {
@@ -80,7 +81,7 @@ const portfolioData = {
           'skils : React / Mobx / javascript / html / sass',
         ],
         skils: 'React / Mobx / javascript / html / sass',
-        images: gasapp,
+        images: gasappAdmin,
         description:
           'React를 이용하여 제작한 관리자 사이트입니다. Style Component를 도입하여 css를 적용하였으며 Mobx로 상태관리 하였습니다.<br/> 도시가스의 신규 오픈서비스 관리 및 기존 서비스 유지보수에 집중한 프로젝트입니다.',
       },
@@ -96,7 +97,7 @@ const portfolioData = {
           'skils : React / Mobx / javascript / html / sass',
         ],
         skils: 'React / Mobx / javascript / html / sass',
-        images: gasapp,
+        images: '',
         description: `웹소켓을 이용해 유저와 상담사간의 채팅상담을 할수 있는 관리자 사이트 입니다. 라이브러리(Rechart / antDesign 등)을 이용하여 통계 및 메뉴 관리를 하였고 상담사들의 니즈를 파악하여 지속적인 서비스를 개선을 하였습니다.`,
       },
     ],
