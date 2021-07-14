@@ -119,6 +119,9 @@
 }
 .profile-section {
   padding-top: 80px;
+  &.intro-section {
+    padding-top: 50px;
+  }
 }
 .profile-text {
   margin-top: 50px;
@@ -226,6 +229,7 @@
     }
   }
   .description {
+    width: 430px;
     margin-top: 15px;
     background: #888;
     color: #fff;
