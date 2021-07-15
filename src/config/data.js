@@ -1,4 +1,4 @@
-import gasapp from '../resources/images/gasapp.gif';
+import gasapp from '../resources/images/gasapp.png';
 import gasappAdmin from '../resources/images/gasappAdmin.gif';
 import gasTalk from '../resources/images/gasTalk.gif';
 
