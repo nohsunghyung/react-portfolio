@@ -6,7 +6,7 @@ import './resources/scss/index.scss';
 const App = () => {
   return (
     <>
-      <AppHeader />
+      {/* <AppHeader /> */}
       <Routes />
     </>
   );

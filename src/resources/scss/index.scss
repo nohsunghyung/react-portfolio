@@ -46,10 +46,13 @@
   position: relative;
 }
 .section-title {
-  margin-bottom: 18px;
+  margin-bottom: 100px;
   font-family: 'NanumSquare';
   font-weight: bold;
-  font-size: 45px;
+  font-size: 70px;
+  &.small {
+    margin-bottom: 40px;
+  }
   span {
     color: #3bc5b0;
   }
@@ -90,7 +93,7 @@
       margin-top: 25px;
       font-family: 'NanumSquare';
       font-weight: bold;
-      font-size: 35px;
+      font-size: 40px;
       letter-spacing: 3px;
     }
     .user-position {
@@ -118,16 +121,15 @@
   }
 }
 .profile-section {
-  padding-top: 80px;
+  padding-top: 120px;
   &.intro-section {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 .profile-text {
-  margin-top: 50px;
   padding-left: 40px;
   font-family: 'NanumSquare';
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
 }
 
@@ -197,15 +199,15 @@
     display: flex;
     align-items: center;
     + .item {
-      margin-top: 100px;
+      margin-top: 140px;
     }
   }
   .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 530px;
-    height: 360px;
+    width: 490px;
+    height: 350px;
     border: 1px solid #d1d1d1;
     text-align: center;
     overflow: hidden;
@@ -215,24 +217,27 @@
     }
   }
   .text-box {
-    margin-left: 60px;
+    margin-left: 75px;
   }
   .project-title {
     font-family: 'NanumSquare';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
   }
   .summary {
-    margin-top: 15px;
-    span {
+    margin-top: 20px;
+    li {
       font-size: 15px;
       color: #999;
+      + li {
+        margin-top: 8px;
+      }
     }
   }
   .description {
     width: 430px;
-    margin-top: 15px;
-    background: #888;
+    margin-top: 20px;
+    background: #777;
     color: #fff;
     padding: 10px;
     border-radius: 7px;
@@ -240,7 +245,7 @@
     line-height: 1.6;
   }
   .url {
-    margin-top: 15px;
+    margin-top: 20px;
     a {
       display: inline-block;
       border-bottom: 1px solid #ddd;
@@ -249,7 +254,7 @@
     }
   }
   .skils {
-    margin-top: 15px;
+    margin-top: 20px;
     dt,
     dd {
       display: inline-block;

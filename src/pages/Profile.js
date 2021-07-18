@@ -37,13 +37,13 @@ const Profile = () => {
           </section>
           <section className="profile-section intro-section">
             <h3 className="section-title">
-              <span>I</span>ntroduce
+              <span>나는</span>
             </h3>
             <p className="profile-text" dangerouslySetInnerHTML={{ __html: introduce }}></p>
           </section>
           <section className="profile-section">
-            <h3 className="section-title">
-              <span>C</span>areer
+            <h3 className="section-title small">
+              <span>어디서</span>
             </h3>
             <ul className="list-container">
               {career.map((item) => (
@@ -70,10 +70,35 @@ const Profile = () => {
           </section>
           <section className="profile-section">
             <h3 className="section-title">
-              <span>W</span>ork project <span className="etc">(회사 프로젝트)</span>
+              <span>무엇을</span>
             </h3>
-            <ul className="list-container">
+            <ul className="portfolio-list">
               {project.frontEnd.map((item) => (
+                <li className="item" key={item.subject}>
+                  <div className="image">
+                    <img src={item.images} alt="" />
+                  </div>
+                  <div className="text-box">
+                    <h4 className="project-title">{item.subject}</h4>
+                    <ul className="summary">
+                      {item.summary.map((list, index) => (
+                        <li key={index}>· {list}</li>
+                      ))}
+                    </ul>
+                    <div className="description" dangerouslySetInnerHTML={{ __html: item.description }}></div>
+                    {item.url ? <div className="url"></div> : null}
+                    <dl className="skils">
+                      <dt>
+                        <strong>Skils</strong>
+                      </dt>
+                      <dd>{item.skils}</dd>
+                    </dl>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <ul className="list-container">
+              {/* {project.frontEnd.map((item) => (
                 <li className="item" key={item.subject}>
                   <div className="date">
                     <div className="period">{item.date}</div>
@@ -92,7 +117,7 @@ const Profile = () => {
                     </ul>
                   </div>
                 </li>
-              ))}
+              ))} */}
               <li className="item">
                 <div className="article">
                   <h4 className="title">
