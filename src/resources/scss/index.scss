@@ -125,6 +125,11 @@
   &.intro-section {
     padding-top: 60px;
   }
+  &.portfolio {
+    .list-container {
+      margin-top: 100px;
+    }
+  }
 }
 .profile-text {
   padding-left: 40px;
@@ -300,6 +305,20 @@
     }
   }
 }
+.old-project-container {
+  margin-top: 100px;
+  .title {
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    font-size: 35px;
+    span {
+      font-family: 'NanumSquare';
+      font-weight: 300;
+      font-size: 20px;
+      color: #999;
+    }
+  }
+}
 .old-project-list {
   margin-top: 40px;
   overflow: hidden;
@@ -367,6 +386,7 @@
       font-size: 16px;
       color: #999;
       .asset {
+        display: inline-block;
         + .asset {
           position: relative;
           padding-left: 10px;
@@ -382,6 +402,9 @@
             transform: translateY(-50%);
             background-color: #aaa;
           }
+        }
+        &.link {
+          border-bottom: 1px solid #999;
         }
       }
     }

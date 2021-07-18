@@ -68,7 +68,7 @@ const Profile = () => {
               ))}
             </ul>
           </section>
-          <section className="profile-section">
+          <section className="profile-section portfolio">
             <h3 className="section-title">
               <span>무엇을</span>
             </h3>
@@ -97,49 +97,27 @@ const Profile = () => {
                 </li>
               ))}
             </ul>
-            <ul className="list-container">
-              {/* {project.frontEnd.map((item) => (
-                <li className="item" key={item.subject}>
-                  <div className="date">
-                    <div className="period">{item.date}</div>
-                  </div>
-                  <div className="article">
-                    <h4 className="title">
-                      <div>{item.subject}</div>
-                    </h4>
-                    <div className="sub-text">
-                      <div>{item.summary}</div>
-                    </div>
-                    <ul className="info-text">
-                      {item.works.map((work, index) => (
-                        <li key={index}>{work}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              ))} */}
-              <li className="item">
-                <div className="article">
-                  <h4 className="title">
-                    <div>
-                      퍼블리싱 작업프로젝트 <span>(2020년 이전)</span>
-                    </div>
-                  </h4>
-                  <div className="sub-text">
-                    {project.publish.map((item) => (
-                      <span className="asset" key={item.subject}>
+            <div className="old-project-container">
+              <h3 className="title">
+                퍼블리싱 프로젝트<span> (2020년 이전)</span>
+              </h3>
+              <ul className="old-project-list">
+                {project.publish.map((item) => (
+                  <li key={item.subject}>
+                    {item.url ? (
+                      <span className="link" onClick={() => window.open(item.url, '_blank')}>
                         {item.subject}
                       </span>
-                    ))}
-                    {project.etc.map((item, index) => (
-                      <span className="asset" key={index}>
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </li>
-            </ul>
+                    ) : (
+                      <span>{item.subject}</span>
+                    )}
+                  </li>
+                ))}
+                {project.etc.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </section>
           <section className="profile-section"></section>
           {/* <profile-list
