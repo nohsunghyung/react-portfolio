@@ -5,7 +5,7 @@ import noh from '../resources/images/noh-image01.jpg';
 
 const Profile = () => {
   const { profile, career, project } = data;
-  const { name, position, links, introduce } = profile;
+  const { name, position, phone, links, introduce } = profile;
   return (
     <div className="profile-container">
       <div className="profile-content">
@@ -17,6 +17,7 @@ const Profile = () => {
             <div className="user-info">
               <h1 className="user-name">{name}</h1>
               <h3 className="user-position">{position}</h3>
+              <div className="user-phone">{phone}</div>
               <div className="info-wrapper">
                 <div className="info-list">
                   {links.map((link) => (

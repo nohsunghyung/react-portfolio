@@ -7,6 +7,7 @@ const portfolioData = {
     name: '노성형',
     position: 'Front-end Developer',
     birth: '1987.09.19',
+    phone: '010-6688-8085',
     links: [
       {
         name: 'email',
@@ -62,7 +63,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasapp,
-        description: `하이브리드 앱 제작<br/> 서울/인천 지역의 서비스를 제주/중부로 확장 작업</br> 미니태양광 / 그린에너지 / AMI사용량 등 신규 서비스 오픈 및 유지보수`
+        description: `- 하이브리드 앱 제작<br/> - 서울/인천 지역의 서비스를 제주/중부로 확장 작업</br> - 미니태양광 / 그린에너지 / AMI사용량 등 신규 서비스 오픈 및 유지보수`
       },
       {
         subject: '가스앱 채팅상담서비스',
@@ -77,7 +78,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasTalk,
-        description: `웹소켓을 이용한 유저와 상담사간의 채팅상담서비스.<br/> 라이브러리(Rechart / antDesign 등) 이용한 통계 및 메뉴 관리<br/> 상담사의 니즈를 파악, 지속적인 서비스 개선`
+        description: `- 웹소켓을 이용한 유저와 상담사간의 채팅상담서비스.<br/> - 라이브러리(Rechart / antDesign 등) 이용한 통계 및 메뉴 관리<br/> - 상담사의 니즈를 파악, 지속적인 서비스 개선`
       },
       {
         subject: '가스앱 관리자',
@@ -92,7 +93,7 @@ const portfolioData = {
         ],
         skils: 'React / Mobx / javascript / html / sass',
         images: gasappAdmin,
-        description: '레거시 코드 리팩토링 작업. Style Component 도입.<br/> 회사 내부 서비스 향상을 위한 메뉴 관리 및 권한 서비스 도입'
+        description: '- 레거시 코드 리팩토링 작업. Style Component 도입.<br/> - 회사 내부 서비스 향상을 위한 메뉴 관리,권한 서비스 직접 제안 및 도입'
       }
     ],
     publish: [

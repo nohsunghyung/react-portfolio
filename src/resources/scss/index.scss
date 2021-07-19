@@ -1,6 +1,8 @@
 // 초기화 css
 @import './reset.scss';
 
+$point-color: #2c8fe3;
+
 .header {
   max-width: 1100px;
   position: relative;
@@ -49,13 +51,13 @@
   margin-bottom: 100px;
   font-family: 'NanumSquare';
   font-weight: bold;
-  font-size: 70px;
+  font-size: 80px;
   &.small {
     margin-bottom: 40px;
   }
   span {
-    color: #3bc5b0;
-    text-shadow: 1px 1px 4px #ddd;
+    color: $point-color;
+    text-shadow: 1px 1px 2px #999;
   }
   .etc {
     font-family: 'NanumSquare';
@@ -65,10 +67,11 @@
   }
 }
 .point-color {
-  color: #3bc5b0;
+  color: $point-color;
 }
 .profile-container {
   border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .profile-content {
   width: 1100px;
@@ -103,11 +106,15 @@
       font-size: 18px;
       color: #999;
     }
+    .user-phone {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #666;
+    }
     .info-wrapper {
-      margin-top: 20px;
+      margin-top: 25px;
     }
     .info-list {
-      margin-top: 15px;
       .url {
         + .url {
           margin-top: 8px;
@@ -204,8 +211,9 @@
   .item {
     display: flex;
     align-items: center;
+    position: relative;
     + .item {
-      margin-top: 140px;
+      padding-top: 150px;
     }
   }
   .image {
@@ -243,11 +251,11 @@
   .description {
     width: 430px;
     margin-top: 20px;
-    background: #888;
+    background: $point-color;
     color: #fff;
     padding: 10px;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
   }
   .url {
