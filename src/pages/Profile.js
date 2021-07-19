@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../config/data';
-import noh from '../resources/images/noh.png';
+// import noh from '../resources/images/noh.png';
+import noh from '../resources/images/noh-image01.jpg';
 
 const Profile = () => {
   const { profile, career, project } = data;
