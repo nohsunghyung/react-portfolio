@@ -125,7 +125,7 @@ const portfolioData = {
         skils: 'React / Redux / Typescript / Javascript / HTML / SCSS',
         images: noteApp,
         height: 550,
-        description: `- React + Typescript + Redux(Thunk)의 스킬 역량 강화를 위한 서비스 제작`
+        description: `- React + Typescript + Redux(Thunk)의 스킬 강화를 위한 서비스 제작`
       }
     ],
     publish: [
