@@ -103,13 +103,23 @@ const Profile = () => {
                       className="description"
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     ></div>
-                    {item.url ? <div className="url"></div> : null}
                     <dl className="skils">
                       <dt>
                         <strong>Skils</strong>
                       </dt>
                       <dd>{item.skils}</dd>
                     </dl>
+                    {item.url ? (
+                      <div className="url">
+                        <span className="type">GitHub</span>{' '}
+                        <span
+                          className="link"
+                          onClick={() => window.open(`${item.url}`, '_blank')}
+                        >
+                          {item.url}
+                        </span>
+                      </div>
+                    ) : null}
                   </div>
                 </li>
               ))}
