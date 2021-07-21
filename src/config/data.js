@@ -113,7 +113,7 @@ const portfolioData = {
         height: 300,
         description: `- 레거시 코드 리팩토링 작업(성능최적화 및 중복 코드 제거)<br/>
           - 기존 css작성 코드에 Style Component 및 scss 도입<br/>
-          - 회사 내부 서비스 향상을 위한 메뉴 관리,권한 서비스 직접 제안 및 도입`
+          - 회사 내부 서비스 향상을 위한 메뉴 관리,권한 서비스 제안 및 도입`
       },
       {
         subject: '메모장 앱<span>(토이프로젝트)</span>',
