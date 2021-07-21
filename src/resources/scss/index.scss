@@ -107,6 +107,7 @@ $point-color: #2c8fe3;
       color: #999;
     }
     .user-phone {
+      font-weight: bold;
       margin-top: 10px;
       font-size: 15px;
       color: #666;
@@ -213,14 +214,15 @@ $point-color: #2c8fe3;
     align-items: center;
     position: relative;
     + .item {
-      padding-top: 150px;
+      padding-top: 130px;
     }
   }
   .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 490px;
+    flex-shrink: 0;
+    width: 420px;
     height: 350px;
     border: 1px solid #d1d1d1;
     text-align: center;
@@ -231,16 +233,23 @@ $point-color: #2c8fe3;
     }
   }
   .text-box {
-    margin-left: 75px;
+    width: 100%;
+    margin-left: 45px;
   }
   .project-title {
     font-family: 'NanumSquare';
     font-weight: bold;
     font-size: 35px;
+    span {
+      font-weight: 300;
+      font-size: 20px;
+      color: #999;
+    }
   }
   .summary {
     margin-top: 20px;
     li {
+      line-height: 1.5;
       font-size: 15px;
       color: #999;
       + li {
@@ -249,14 +258,15 @@ $point-color: #2c8fe3;
     }
   }
   .description {
-    width: 430px;
+    // width: 430px;
     margin-top: 20px;
     background: $point-color;
     color: #fff;
     padding: 10px;
     border-radius: 7px;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
   }
   .url {
     margin-top: 20px;

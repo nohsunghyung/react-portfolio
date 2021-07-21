@@ -27,7 +27,10 @@ const Profile = () => {
                           {link.url}
                         </a>
                       ) : (
-                        <span className="link" onClick={() => window.open(`${link.url}`, '_blank')}>
+                        <span
+                          className="link"
+                          onClick={() => window.open(`${link.url}`, '_blank')}
+                        >
                           {link.url}
                         </span>
                       )}
@@ -41,7 +44,10 @@ const Profile = () => {
             <h3 className="section-title">
               <span>나는</span>
             </h3>
-            <p className="profile-text" dangerouslySetInnerHTML={{ __html: introduce }}></p>
+            <p
+              className="profile-text"
+              dangerouslySetInnerHTML={{ __html: introduce }}
+            ></p>
           </section>
           <section className="profile-section">
             <h3 className="section-title small">
@@ -77,17 +83,26 @@ const Profile = () => {
             <ul className="portfolio-list">
               {project.frontEnd.map((item) => (
                 <li className="item" key={item.subject}>
-                  <div className="image">
+                  <div className="image" style={{ height: item.height }}>
                     <img src={item.images} alt="" />
                   </div>
                   <div className="text-box">
-                    <h4 className="project-title">{item.subject}</h4>
+                    <h4
+                      className="project-title"
+                      dangerouslySetInnerHTML={{ __html: item.subject }}
+                    ></h4>
                     <ul className="summary">
                       {item.summary.map((list, index) => (
-                        <li key={index}>· {list}</li>
+                        <li
+                          key={index}
+                          dangerouslySetInnerHTML={{ __html: list }}
+                        ></li>
                       ))}
                     </ul>
-                    <div className="description" dangerouslySetInnerHTML={{ __html: item.description }}></div>
+                    <div
+                      className="description"
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    ></div>
                     {item.url ? <div className="url"></div> : null}
                     <dl className="skils">
                       <dt>
@@ -103,11 +118,15 @@ const Profile = () => {
               <h3 className="title">
                 퍼블리싱 프로젝트<span> (2020년 이전)</span>
               </h3>
+
               <ul className="old-project-list">
                 {project.publish.map((item) => (
                   <li key={item.subject}>
                     {item.url ? (
-                      <span className="link" onClick={() => window.open(item.url, '_blank')}>
+                      <span
+                        className="link"
+                        onClick={() => window.open(item.url, '_blank')}
+                      >
                         {item.subject}
                       </span>
                     ) : (
