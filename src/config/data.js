@@ -119,8 +119,7 @@ const portfolioData = {
         subject: '메모장 앱<span>(토이프로젝트)</span>',
         date: '2021.06 ~ 2021.07',
         summary: [
-          '- API 통신을 이용한 로그인/회원가입 및 CRUD 기능의 메모장 앱',
-          '- 개인 스킬 역량 강화를 위한 토이프로젝트'
+          '- API 통신을 이용한 로그인/회원가입 및 CRUD 기능의 메모장 앱'
         ],
         works: [],
         skils: 'React / Redux / Typescript / Javascript / HTML / SCSS',
